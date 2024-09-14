@@ -1,16 +1,15 @@
-import { type } from "jquery";
-import mongoose from "../database/conexao.js";
+import mongoose from "mongoose";
 
-const Schema = mongoose.Schema()
+const Schema = mongoose.Schema
 
 const Categoria = new Schema({
     nome:{
-        type:STRING,
+        type:String,
         required:true
     },
 
-    slog:{
-        type:STRING,
+    slug:{
+        type:String,
         required: true
     }, 
 
@@ -21,3 +20,5 @@ const Categoria = new Schema({
 })
 
 mongoose.model('categorias', Categoria )
+
+export default Categoria
