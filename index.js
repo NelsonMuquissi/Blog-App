@@ -22,6 +22,13 @@ app.use(session({
     saveUninitialized: true
 }))
 
+// Middleware
+
+app.use((req, res, next) =>{
+    res.locals.success_sms = req.flash("success_sms")
+    res.locals.error_sms = req.flash("error_sms")
+})
+
 // Configuração do bodyParser
 
 app.use(bodyParser.urlencoded({extended: true}))
