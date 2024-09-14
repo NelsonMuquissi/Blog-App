@@ -5,6 +5,7 @@ import createError from 'http-errors'
 import ejs from 'ejs'
 import admin from './routes/admin.js'
 import home from './routes/home.js'
+import mongoose from './database/conexao.js'
 
 
 // Configuração do express

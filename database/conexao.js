@@ -10,3 +10,5 @@ mongoose
   .catch((error) => {
     console.log({ "Houve um erro ao se conectar com o mongodb": error });
   });
+
+  export default mongoose
