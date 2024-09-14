@@ -3,14 +3,15 @@ import { Router } from "express";
 const route = Router()
 
 route.get('/', (req, res) =>{
-    res.send("Página inicial do ADM")
+    res.render('./admin/index')
 })
 
-route.get('/post', (req,res) =>{
-    res.send("Lista de posts")
+route.get('/categorias', (req,res) =>{
+    res.render('./admin/categorias')
 })
 
-route.get('/cadastro', (req,res) => {
-    res.send('Cadastrar')
+route.get('/categoria/add', (req, res) => {
+    res.render('./admin/addcategorias')
 })
+
 export default route
