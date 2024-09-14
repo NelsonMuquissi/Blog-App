@@ -3,6 +3,7 @@ import bodyParser from 'body-parser'
 import logger from 'morgan'
 import createError from 'http-errors'
 import ejs from 'ejs'
+import session from 'express-session'
 import admin from './routes/admin.js'
 import home from './routes/home.js'
 import mongoose from './database/conexao.js'
@@ -12,6 +13,14 @@ import mongoose from './database/conexao.js'
 
 const app = express()
 app.use(express.json())
+
+// Configuração das sessões
+
+app.use(session({
+    secret: 'BlogNode',
+    resave: true,
+    saveUninitialized: true
+}))
 
 // Configuração do bodyParser
 
