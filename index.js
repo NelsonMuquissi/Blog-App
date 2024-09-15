@@ -24,10 +24,10 @@ app.use(session({
 
 // Middleware
 
-app.use((req, res, next) =>{
-    res.locals.success_sms = req.flash("success_sms")
-    res.locals.error_sms = req.flash("error_sms")
-})
+// app.use((req, res, next) =>{
+//     res.locals.success_sms = req.flash("success_sms")
+//     res.locals.error_sms = req.flash("error_sms")
+// })
 
 // Configuração do bodyParser
 
