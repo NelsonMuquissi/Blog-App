@@ -10,11 +10,18 @@
 </head>
 <body>
             
-<% erros.map((erro) => { %>
-        <h2><%= erro.texto %></h2>
- <% }) %>
+
 
     <main>
+        <div class="principal">
+            <div class="listError">
+            
+                <% erros.map((erro) => { %>
+                   <div class="error"><h2><%= erro.texto %></h2> </div>
+                <% }) %>
+           
+        </div>
+
     <div class="formulario">
         <h3>Nova Categoria:</h3>
         <form action="/admin/categoria/nova" method="post">
@@ -26,6 +33,7 @@
         </form>
     </div>
 
+        </div>    
     </main>
     <footer>Rodapé</footer>
 </body>
