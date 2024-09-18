@@ -3,3 +3,75 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* 
+header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("imagem/Relogio.jpg") no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    display: flex;
+} */
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headermenu{
+ display: flex;
+ width: 100vw;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #eee;
+}
+
+header,nav,main,aside, footer{
+    display: flex;
+    background-color: #eee;
+    margin: 4px;
+}
+
+
+
+header{
+    flex: 1 1 100vw;
+    height: 400px;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav{
+ margin-right: 50px;
+}
+
+nav a{
+    margin: 20px;
+    font-size: 17pt;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+main{
+flex: 1 1 100vw;
+min-height: calc(100vh - 424px);
+}
+
+aside{
+flex: 1 1 100vw;
+min-height: 200px;
+}
+
+footer{
+ flex: 1 1 100vw;
+ height: 100px;
+}

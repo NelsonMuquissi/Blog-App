@@ -10,15 +10,15 @@ const route = Router()
 let erros = []
 
 route.get('/', (req, res) =>{
-    res.render('./admin/index')
+    res.render('./pages/admin/index')
 })
 
 route.get('/categorias', (req,res) =>{
-    res.render('./admin/categorias')
+    res.render('./pages/admin/categorias')
 })
 
 route.get('/categoria/add', (req, res) => {
-    res.render('./admin/addcategorias',{erros})
+    res.render('./pages/admin/addcategorias',{erros})
 })
 
 route.post('/categoria/nova', (req,res) => {
@@ -54,9 +54,12 @@ route.post('/categoria/nova', (req,res) => {
 
 
     new Categorias(novacategoria).save().then(() => {
-        console.log("Categoria salva com sucesso")
+        // console.log("Categoria salva com sucesso")
+        // req.flash('success_sms', "Cadastrado com sucesso")
+        res.redirect('/admin/categorias')
     }).catch((error) =>{
-        console.log("Erro ao cadastrar categoria", error)
+        //   req.flash("error_sms", "Erro ao cadastrar");
+         res.redirect("/admin/index");
     })
 })
 
