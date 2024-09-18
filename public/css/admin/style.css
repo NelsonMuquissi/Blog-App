@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+flex: 1 1 100vw;
+min-height: calc(100vh - 150px);
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.title{
+    display: flex;
+    justify-content:space-between;
+    /* margin-left: 7%; */
+    width: 80%;
+
+    & button{
+        padding: 12px;
+        background-color: rgb(25, 25, 243);
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+}
+
+
+.listCategoria{
+ background-color:white;
+ border-radius: 9px;
+ width: 80%;
+ height: 90%;
+ display: flex;
+}
+
+footer{
+ flex: 1 1 100vw;
+ height: 100px;
+}

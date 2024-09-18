@@ -1,0 +1,35 @@
+.formulario{
+    width: 400px;
+
+    & h3{
+        border: 2px solid #fff;
+        width: 95%;
+        margin-bottom: 9px;
+        padding: 6px;
+    }
+}
+
+.formulario form{
+    width: 95%;
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+.formulario input{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 9px;
+    border-radius: 5px;
+    border: 1px solid rgb(158, 158, 248);
+    outline: none;
+}
+
+.formulario button{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(25, 25, 243);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

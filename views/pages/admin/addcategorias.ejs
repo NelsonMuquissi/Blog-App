@@ -1,11 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/admin/style.css" />
+     <link rel="stylesheet" href="/css/admin/addCa.css" />
+    <title>Nova Categoria</title>
+</head>
+<body>
+            
 <% erros.map((erro) => { %>
         <h2><%= erro.texto %></h2>
  <% }) %>
-<h3>Nova Categoria:</h3>
-<form action="/admin/categoria/nova" method="post">
-    <label for="text">Nome:</label>
-    <input type="text" name="nome" id="nome" placeholder="Informe o nome da categoria">
-    <label for="text">Slug:</label>
-    <input type="text" name="slug" id="slug" placeholder="Slug da categoria">
-    <button type="submit">Criar nova categoria</button>
-</form>
+
+    <main>
+    <div class="formulario">
+        <h3>Nova Categoria:</h3>
+        <form action="/admin/categoria/nova" method="post">
+        <label for="text">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Informe o nome da categoria">
+        <label for="text">Slug:</label>
+        <input type="text" name="slug" id="slug" placeholder="Slug da categoria">
+        <button type="submit">Criar nova categoria</button>
+        </form>
+    </div>
+
+    </main>
+    <footer>Rodapé</footer>
+</body>
+</html>
