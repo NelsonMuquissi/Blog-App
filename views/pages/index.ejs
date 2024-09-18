@@ -7,17 +7,40 @@
     <title>Blog - App</title>
   </head>
   <body>
-
     <%- include('../partial/header.ejs') %>
     <header>
-      Cabeçalho
     </header>
 
     <main>
-      Principal <br />
-      <%= title %>
+      <div class="ListCard">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
     </main>
-    <aside>Relacional</aside>
+
+    <aside>
+      <div class="CardFunc">
+        <div class="card"></div>
+        <div class="desc">qwehjqfbqurfqifrukqfrsifbqluj</div>
+      </div>
+
+      <div class="CardDepo">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+
+      <div class="ListPlan">
+        <h2>Nossos Planos</h2>
+        <div class="CardPlan"></div>
+        <div id="alto" class="CardPlan"></div>
+        <div class="CardPlan"></div>
+      </div>
+    </aside>
+
       <%- include('../partial/footer.ejs') %>
   </body>
 </html>

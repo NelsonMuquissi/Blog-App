@@ -37,6 +37,7 @@ main{
     border: 1px solid rgb(158, 158, 248);
     outline: none;
     background-color: whitesmoke;
+    padding-left: 19px;
 }
 
 .formulario button{

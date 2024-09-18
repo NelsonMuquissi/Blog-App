@@ -62,13 +62,87 @@ nav a{
 }
 
 main{
+flex-wrap: wrap;
 flex: 1 1 100vw;
 min-height: calc(100vh - 424px);
 }
 
+.ListCard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+     justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 280px;
+    height: 200px;
+    background-color: blue;
+    margin: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.card:hover{
+scale: 1.1;
+}
+
 aside{
+flex-wrap: wrap;
 flex: 1 1 100vw;
 min-height: 200px;
+}
+
+.CardFunc{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CardFunc .card{
+    width: 430px;
+    height: 300px;
+}
+
+.CardDepo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ListPlan{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & h2{
+        flex: 1 1 100vw;
+        margin: 20px;
+    }
+}
+
+.CardPlan{
+    width: 380px;
+    height: 500px;
+    background-color: blue;
+    margin: 15px;
+    border-radius: 7px;
+}
+
+.ListPlan #alto{
+    opacity: 20px;
+    scale: 1.1;
 }
 
 footer{
