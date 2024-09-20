@@ -37,22 +37,30 @@ flex-wrap: wrap;
  height: 90%;
  display: flex;
  flex-wrap: wrap;
+ overflow-y: auto;
+ max-height: 500px;
+
 }
 
 .cate{
     display: flex;
-    height: 55px;
+    height: 95px;
     width: 100%;
     border: 1px solid #eee;
-    margin: 30px;
+    margin: 20px;
     border-radius: 9px;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 
     & small{
         flex: 1 1 100vw;
+        
     }
+}
+
+.buttonfunc, .list{
+    padding: 10px;
 }
 
 footer{

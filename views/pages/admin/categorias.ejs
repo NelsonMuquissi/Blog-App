@@ -21,7 +21,19 @@
 
     <div class="listCategoria">
       <% categorias.map((dados) => { %>
-        <div class="cate"><%= dados.nome %> <br> <small><%- dados.slug %></small></div>
+        <div class="cate">
+          <div class="list">
+           <h4> <%= dados.nome %> </h4> <br>
+            <small><%= dados.slug %></small>  <br>
+            <small><%= dados.date %></small>
+          </div>
+          
+          <div class="buttonfunc">
+            <a href="/admin/categoria/edit">edit</a>
+            <a href="">delete</a>
+          </div>
+        </div>
+       
       <% }) %>
       
     </div>

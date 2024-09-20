@@ -65,8 +65,12 @@ route.post('/categoria/nova', (req,res) => {
         res.redirect('/admin/categorias')
     }).catch((error) =>{
         //   req.flash("error_sms", "Erro ao cadastrar");
-         res.redirect("/admin/index");
+         res.redirect("/admin/");
     })
+})
+
+route.get('/categoria/edit', (req,res) =>{
+    res.render("./pages/admin/editcategoria");
 })
 
 export default route

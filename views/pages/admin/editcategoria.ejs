@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/admin/style.css" />
+     <link rel="stylesheet" href="/css/admin/addCa.css" />
+    <title>Editar Categoria</title>
+</head>
+<body>
+            
+
+
+    <main>
+        <div class="principal">
+            <div class="listError">
+        </div>
+
+    <div class="formulario">
+        <h3>Editar Categoria:</h3>
+        <form action="/admin/categoria/nova" method="post">
+        <label for="text">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Informe o nome da categoria">
+        <label for="text">Slug:</label>
+        <input type="text" name="slug" id="slug" placeholder="Slug da categoria">
+        <button type="submit">Criar nova categoria</button>
+        </form>
+    </div>
+
+        </div>    
+    </main>
+    <%- include ('../../partial/footer.ejs') %>
+</body>
+</html>
