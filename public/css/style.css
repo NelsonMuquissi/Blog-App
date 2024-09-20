@@ -114,6 +114,7 @@ min-height: 200px;
     margin-top: 70px;
     justify-content: center;
     align-items: center;
+    color: #fff;
     
 }
 
@@ -125,6 +126,7 @@ min-height: 200px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 60px;
 
     & h2{
         flex: 1 1 100vw;
@@ -137,12 +139,13 @@ min-height: 200px;
     height: 500px;
     background-color: blue;
     margin: 15px;
-    border-radius: 7px;
+    border-radius: 13px;
 }
 
 .ListPlan #alto{
-    opacity: 20px;
     scale: 1.1;
+    border: 5px solid white;
+
 }
 
 footer{

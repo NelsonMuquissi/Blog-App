@@ -36,6 +36,23 @@ flex-wrap: wrap;
  width: 80%;
  height: 90%;
  display: flex;
+ flex-wrap: wrap;
+}
+
+.cate{
+    display: flex;
+    height: 55px;
+    width: 100%;
+    border: 1px solid #eee;
+    margin: 30px;
+    border-radius: 9px;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+
+    & small{
+        flex: 1 1 100vw;
+    }
 }
 
 footer{

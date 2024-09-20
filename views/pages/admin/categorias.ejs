@@ -20,7 +20,10 @@
     </div>
 
     <div class="listCategoria">
-
+      <% categorias.map((dados) => { %>
+        <div class="cate"><%= dados.nome %> <br> <small><%- dados.slug %></small></div>
+      <% }) %>
+      
     </div>
 
    </div>

@@ -14,7 +14,13 @@ route.get('/', (req, res) =>{
 })
 
 route.get('/categorias', (req,res) =>{
-    res.render('./pages/admin/categorias')
+    Categorias.find().then((categorias) => {
+        res.render('./pages/admin/categorias', {categorias:categorias})
+    }).catch((error) => {
+        console.log("Erro ao listar os dados")
+        res.redirect("./pages/admin/")
+    })
+   
 })
 
 route.get('/categoria/add', (req, res) => {
